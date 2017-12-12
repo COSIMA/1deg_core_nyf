@@ -13,13 +13,13 @@ model: access-om2
 submodels:
     - name: atmosphere
       model: matm
-      exe: matm_nt62_86e1835a.exe
+      exe: matm_nt62_2c6add9f.exe
       input: core_nyf
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM_5dd8e902.x
+      exe: fms_ACCESS-OM_282c6f63.x
       input: mom_1deg
       timestep: 1800
       ncpus: 216
