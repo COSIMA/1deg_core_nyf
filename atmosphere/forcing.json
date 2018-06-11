@@ -1,0 +1,56 @@
+{
+  "description": "JRA55-do V1.3 RYF 1990-91 forcing",
+  "inputs": [
+    {
+      "filename": "INPUT/ncar_rad.0001.nc",
+      "fieldname": "SWDN_MOD",
+      "cname": "swfld_ai"
+    },
+    {
+      "filename": "INPUT/ncar_rad.0001.nc",
+      "fieldname": "LWDN_MOD",
+      "cname": "lwfld_ai"
+    },
+    {
+      "filename": "INPUT/ncar_precip.0001.nc",
+      "fieldname": "RAIN",
+      "cname": "rain_ai"
+    },
+    {
+      "filename": "INPUT/ncar_precip.0001.nc",
+      "fieldname": "SNOW",
+      "cname": "snow_ai"
+    },
+    {
+      "filename": "INPUT/slp.0001.nc",
+      "fieldname": "SLP",
+      "cname": "press_ai"
+    },
+    {
+      "filename": "INPUT/runoff.daitren.clim.10FEB2011.nc",
+      "fieldname": "runoff",
+      "cname": "runof_ai"
+    },
+    {
+      "filename": "INPUT/t_10.0001.nc",
+      "fieldname": "T_10_MOD",
+      "cname": "tair_ai"
+    },
+    {
+      "filename": "INPUT/q_10.0001.nc",
+      "fieldname": "Q_10_MOD",
+      "cname": "qair_ai"
+    },
+    {
+      "filename": "INPUT/u_10.0001.nc",
+      "fieldname": "U_10_MOD",
+      "cname": "uwnd_ai"
+    },
+    {
+      "filename": "INPUT/v_10.0001.nc",
+      "fieldname": "V_10_MOD",
+      "cname": "vwnd_ai"
+    },
+  ]
+}
+

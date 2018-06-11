@@ -203,7 +203,6 @@
 /
 
  &ocean_model_nml
-	  dt_ocean=3600
       layout = 16,15
       time_tendency='twolevel'
       vertical_coordinate='zstar'
@@ -631,7 +630,6 @@
 /
 
 &auscom_ice_nml
-    dt_cpl=3600
     do_ice_once=.false.
     pop_icediag=.true.
     kmxice=5
@@ -649,16 +647,6 @@
 /
 
 &ocean_solo_nml
-    debug_this_module=.false.
-    years = 0
-    months = 0
-    days   = 1460
-    date_init = 0001,01,01,0,0,0
-    hours = 0
-    minutes = 0
-    seconds = 0
-    calendar = 'NOLEAP'
-    dt_cpld  = 3600
 /
 
 &bg_diff_lat_dependence_nml

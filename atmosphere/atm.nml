@@ -1,0 +1,6 @@
+&atm_nml
+&end
+
+&runoff_nml
+    remap_weights_file = 'INPUT/rmp_daitren_runoff_MOM1_conserve2nd.nc'
+&end

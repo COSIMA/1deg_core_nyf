@@ -1,52 +1,34 @@
 # PBS configuration
 queue: normalbw
 project: x77
-walltime: 4:00:00
+walltime: 6:00:00
 jobname: 1deg_core_nyf
 ncpus: 252
 mem: 500GB
 
-shortpath: /short/e14
+shortpath: /short/x77
 
 # Model configuration
 model: access-om2
+input: /short/public/access-om2/input_46fb3d3b/common_1deg_core
 submodels:
     - name: atmosphere
-      model: matm
-      exe: matm_nt62_2c6add9f.exe
-      input: core_nyf
+      model: yatm
+      exe: /short/public/access-om2/bin/yatm_d4a9c5f2d.exe
+      input: /short/public/access-om2/input_46fb3d3b/yatm_1deg
       ncpus: 1
 
     - name: ocean
       model: mom
-      exe: fms_ACCESS-OM_282c6f63.x
-      input: mom_1deg
-      timestep: 1800
+      exe: /short/public/access-om2/bin/fms_ACCESS-OM_99168b44.x
+      input: /short/public/access-om2/input_46fb3d3b/mom_1deg
       ncpus: 216
 
     - name: ice
       model: cice5
-      exe: cice_auscom_360x300_24p_c612c0dd.exe
-      input: cice_1deg
-      timestep: 1800
+      exe: /short/public/access-om2/bin/cice_auscom_360x300_24p_c8ee6196.exe
+      input: /short/public/access-om2/input_46fb3d3b/cice_1deg
       ncpus: 24
-
-    - name: coupler
-      model: oasis
-      input: oasis_core_to_1deg
-      timestep: 1800
-      ncpus: 0
-
-calendar:
-    runtime:
-        years: 1
-        months: 0
-        days: 0
-
-    start:
-        year: 1
-        month: 1
-        days: 1
 
 platform:
     nodesize: 28
