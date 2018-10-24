@@ -1,5 +1,5 @@
 {
-  "description": "JRA55-do V1.3 RYF 1990-91 forcing",
+  "description": "CORE II forcing",
   "inputs": [
     {
       "filename": "INPUT/ncar_rad.0001.nc",
