@@ -68,7 +68,8 @@ ACCESS-OM2
  "ocean_model","river","river",        "ocean","all",.true.,"none",2
  "ocean_model","ice_calving","ice_calving",        "ocean","all",.true.,"none",2
  "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler" ,"ocean","all",.true.,"none",2
- "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
+# see https://github.com/COSIMA/access-om2/issues/139
+# "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
  "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
  "ocean_model","tau_y","tau_y"                         ,"ocean","all",.true.,"none",2
  "ocean_model","salt_flux_coupler","salt_flux_coupler" ,"ocean","all",.true.,"none",2
@@ -126,6 +127,7 @@ ACCESS-OM2
 #"ocean_model","total_ocean_sfc_salt_flux_coupler","total_ocean_sfc_salt_flux_coupler","ocean_scalar","all",.true.,"none",1
 #
 # total heat into ocean from (sw + lw + latent + sens + mass transfer)
+# see https://github.com/COSIMA/access-om2/issues/139
 #"ocean_model","total_net_sfc_heating","total_net_sfc_heating","ocean_scalar","all",.true.,"none",1
 #
 # total mass flux from p-e+r (note: melt is included in precip)
