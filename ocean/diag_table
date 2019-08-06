@@ -72,7 +72,7 @@ ACCESS-OM2
  "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
  "ocean_model","tau_y","tau_y"                         ,"ocean","all",.true.,"none",2
  "ocean_model","salt_flux_coupler","salt_flux_coupler" ,"ocean","all",.true.,"none",2
- "ocean_model","frazil_2d","frazil_2d" ,"ocean","all",.true.,"none",2
+ "ocean_model","frazil_3d_int_z","frazil_3d_int_z" ,"ocean","all",.true.,"none",2
  "ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore" ,"ocean","all",.true.,"none",2
 #
 # volume transport
